@@ -1,0 +1,24 @@
+package app;
+import java.util.Locale;
+import java.util.Scanner;
+import entities.Employee;
+
+public class Main {
+	public static void main (String[] srgs) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Employee funcionario = new Employee();
+		
+		System.out.print("Nome: ");
+		funcionario.name = sc.nextLine();
+		
+		System.out.print("Salário bruto: ");
+		funcionario.salarioBruto = sc.nextDouble();
+		
+		System.out.print("Salário bruto: ");
+		funcionario.imposto = sc.nextDouble();
+		
+		sc.close();
+	}
+}
