@@ -1,6 +1,0 @@
-package app;
-import java.util.Locale;
-
-public class Main {
-	Locale.setDefault(Locale.US);
-}
